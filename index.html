@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Bootstrap Sidebar</title>
+</head>
+<body>
+<div class="main-container d-flex">
+        <div class="sidebar" id="side_nav">
+        <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
+            <h1 class="fs-4"><span class="bg-white text-dark rounded shadow px-2 me-2">CL</span> <span
+                    class="text-white">Falcon Mail</span></h1>
+            <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i class="fal fa-stream"></i></button>
+        </div>
+
+        <ul class="list-unstyled px-2">
+            <li class="active"><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fal fa-home"></i>
+                    Dashboard</a></li>
+            <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fal fa-list"></i>
+                    Projects</a></li>
+            <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block d-flex justify-content-between">
+                    <span><i class="fal fa-comment"></i> Messages</span>
+                    <span class="bg-dark rounded-pill text-white py-0 px-2">02</span>
+                </a>
+            </li>
+            <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
+                        class="fal fa-envelope-open-text"></i> Services</a></li>
+            <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fal fa-users"></i>
+                    Customers</a></li>
+        </ul>
+        <hr class="h-color mx-2">
+
+        <ul class="list-unstyled px-2">
+            <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fal fa-bars"></i>
+                    Settings</a></li>
+            <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fal fa-bell"></i>
+                    Notifications</a></li>
+
+        </ul>
+
+    </div>
+    <div class="content">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between d-md-none d-block">
+                    <button class="btn px-1 py-0 open-btn me-2"><i class="fal fa-stream"></i></button>
+                    <a class="navbar-brand fs-4" href="#"><span
+                            class="bg-dark rounded px-2 py-0 text-white">CL</span></a>
+
+                </div>
+                <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fal fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Profile</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="dashboard-content px-2 pt-4">
+         
+       
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Comments</label>
+        </div>
+        <div class="example-scp">
+            <div class="card" style="width: 100%">
+              
+                <div class="class-body">
+                    <h5 class="card-title">EMAIL one   </h5>
+                    <p class="card-text"> Los hombres son de esponja traido de las montanana el hombre mas umilde se toma buena cana</p>
+                
+                </div>
+                
+
+</div>
+
+            
+
+
+
+        
+        
+    </div>
+</div>
+<!-- Button trigger modal -->
+
+<div class="container">
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+</button>
+
+<!-- Modal -->
+<div class="container" id="email">
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+</html>
